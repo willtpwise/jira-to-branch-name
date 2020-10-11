@@ -1,0 +1,22 @@
+{
+  "name": "jira-to-branch-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "jira-to-branch-name": "bin/jira-to-branch-name.js",
+    "jbn": "bin/jira-to-branch-name.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.5.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
