@@ -26,13 +26,17 @@ jobs:
           name: Publish package
           command: npm publish
 workflows:
-  build-test-publish:
+  test-and-publish:
     jobs:
-      - test
+      - test:
+          filters:  # required since `deploy` has tag filters AND requires `build`
+            tags:
+              only: /.*/
       - publish:
-          context: personal
+          requires:
+            - test
           filters:
             tags:
               only: /^v.*/
-          requires:
-            - test
+            branches:
+              ignore: /.*/
