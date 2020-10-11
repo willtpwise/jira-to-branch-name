@@ -3,6 +3,7 @@
 > A CLI which takes a Jira ID and summary then converts it to a GitHub
 > branch name
 
+![Example usage where you can copy a Jira ID and Summary and make it a branch name](./img/usage.gif)
 
 ## Installation
 
